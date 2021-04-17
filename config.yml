@@ -8,3 +8,33 @@ steps:
     description: >-
       There are many more courses available on Learning Lab for you to check
       out.
+
+XA=seq(from=0,to=1,by=0.1)
+XA
+CA0=rep(c(0.1), time=(11))
+CA0
+k=rep(c(10), time=11)
+k
+
+n_2=c()
+n_1=c() 
+n0=c()
+n1=c()
+n2=c()
+
+  
+n=(-2)
+
+while (n<=2) {if(n=(-2)){
+  n_2=c(n_2,((1/(k*(CA0^(n-1))))*(XA/(1-XA)^n))) 
+} else if(n=(-1)) {
+  n_1=c(n_1,((1/(k*(CA0^(n-1))))*(XA/(1-XA)^n)))
+} else if (n=0) {
+n0=c(n0,((1/(k*(CA0^(n-1))))*(XA/(1-XA)^n)))
+} else if (n=1) {
+  n1=c(n1,((1/(k*(CA0^(n-1))))*(XA/(1-XA)^n)))
+}else (n=2) {
+  n2=c(n2,((1/(k*(CA0^(n-1))))*(XA/(1-XA)^n)))
+}
+  n=n+1
+}
